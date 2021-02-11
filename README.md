@@ -11,4 +11,7 @@
 4. `sudo microk8s kubectl get services`
 5. Identify the Port between 3XXXX port number; this should be accessible at the host machine's IP address
 
+NOTE: We can scale the deployment with the following command:
+`sudo microk8s kubectl scale deployment deployment-name --replicas=5`
+
 NOTE: We can then use NGINX on the host machine to take traffic arriving at port 80 and direct it to the 3XXXX port
